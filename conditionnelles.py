@@ -10,12 +10,12 @@ else:
   # switch case
   var = int(input(quel est votre numero))  
     case 1:
-    print(lundi)
+        print(lundi)
     case 2:
-    print(mardi)
+         print(mardi)
     case 3:
-    print(mercredi)
+        print(mercredi)
     case 4:
-    print(jeudi)
+        print(jeudi)
     case 5:
-    print(vendredi)
+        print(vendredi)
