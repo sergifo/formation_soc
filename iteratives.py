@@ -86,14 +86,70 @@
 # 5 X 8 = 40
 # 5 X 9 = 45
 # 5 X 10 = 50
-nombre_depart2 = int(input("rentrer votre nombre de depart "))
-for i in range(1,11):
-    print(f"{nombre_depart2} X {i} = {nombre_depart2 * i}")
+# nombre_depart2 = int(input("rentrer votre nombre de depart "))
+# for i in range(1,11):
+#     print(f"{nombre_depart2} X {i} = {nombre_depart2 * i}")
+
+
+#exo5
+#Écrire un programme qui demande à l'utilisateur de saisir 20 nombres. Le programme doit ensuite déterminer et afficher le plus grand de ces nombres.
+# plus_grand_nombre_saisi = None
+
+# print("merci de siair 20 nombres")
+# for i in range(20):
+#     nombre_saisi = float(input(f"nombre{i+1}:"))
+#     if plus_grand_nombre_saisi is None or nombre_saisi > plus_grand_nombre_saisi:
+#         plus_grand_nombre_saisi = nombre_saisi
+# print(f"le plus grand nombre est plus{plus_grand_nombre_saisi}")
+
+
+#exo7
+#Écrire un programme qui demande à l'utilisateur de saisir 20 nombres. Le programme doit ensuite déterminer et afficher le plus grand de ces nombres ainsi que sa position (le numéro d'entrée).
+# print("veuillez saisir 20 nombres")
+# nombres  = None
+# for i in range(20):
+#     grand_nombre = max(i)
+
+#exo8
+#Écrire un programme qui demande à l'utilisateur de saisir un nombre de départ. Le programme doit ensuite calculer et afficher la factorielle de ce nombre.
+nombre_afactoriser = int(input("veuillez saisir un nombreà facoriser :"))
+#total = 1
+
+for i in range(1, nombre_afactoriser + 1):
+    print(i* nombre_afactoriser + i)
+
+    
+#print(total)
 
 
 
 
 
+
+
+
+
+
+#exo9
+#Écrire un programme de caisse qui permet à l'utilisateur de saisir le prix de plusieurs articles un par un.
+#  Lorsqu'un prix de 0 est saisi, cela signifie la fin des saisies. Le programme doit ensuite afficher le total à payer, demander à 
+#l'utilisateur le montant de son paiement, et calculer et afficher la monnaie à rendre, 
+# en décomposant cette monnaie en billets de 10 euros, 5 euros, et en pièces de 1 euro.
+
+print("veuiller saisir les prix un par un")
+total = 0
+
+while True:
+    prix = float(input("veuller saisir les prix un par un"))
+    total = total + prix
+    if prix == 0:
+        break
+    print(total)
+    print("quel est le montant de votre paiement")
+paiement = 0
+while paiement:
+    monnaie = paiement - total
+    print(monnaie)
 
     
         
