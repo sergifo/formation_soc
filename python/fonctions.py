@@ -185,6 +185,20 @@ print(rechercher_par_niveau("erreur"))
 # logs avec info
 print(rechercher_par_niveau("info"))
 
+def compter_logs() :
+    nombre_par_log = {}
+    for log in nombre_par_log:
+        print(log) 
+        nombre_par_log[log] += 1
+    else:
+        nombre_par_log[log] = 1
+
+
+
+
+
+
+
 
     
     
