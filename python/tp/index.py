@@ -96,7 +96,7 @@ for ip, count in compteur_ips.items():
 # 3. **Rapport:**
 #    - Produisez un rapport des anomalies détectées avec des recommandations pour chaque anomalie identifiée.
 
-
+open
 
 
 
