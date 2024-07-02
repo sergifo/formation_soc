@@ -1,0 +1,69 @@
+TP : Utilisation avancée de find, grep, less, tail, cat et more
+Partie 1 : Recherche de Fichiers avec find
+1. Rechercher tous les fichiers .log dans le répertoire /var/log :
+find /var/log/*.log
+2. Rechercher tous les fichiers modifiés dans les 7 derniers jours dans /etc :
+tail -n 7 /etc
+3. Rechercher tous les fichiers de plus de 10 Mo dans /var/log :
+sudo find /var/log -type f -size +10M
+
+4. Rechercher tous les fichiers appartenant à l'utilisateur root dans /var/log :
+sudo find /var/log -type f -user root
+
+
+Partie 2 : Recherche de Contenu dans les Fichiers avec grep
+1. Rechercher le mot "error" dans tous les fichiers .log dans /var/log :
+grep /var/log/*.log "error"
+2. Rechercher le mot "failed" dans les fichiers de configuration dans /etc et afficher les numéros
+de ligne :
+sudo grep -rnw '/etc' -e "failed"
+
+
+3. Rechercher les adresses IP dans un fichier log spécifique :
+
+Partie 3 : Visualisation avec less et more
+1. Afficher le contenu de /var/log/syslog avec less :
+sudo less /var/log/syslog
+
+
+2. Afficher le contenu de /etc/passwd avec more :*
+sudo more /etc/passwd
+
+
+Partie 4 : Surveillance de Fichiers avec tail
+1. Afficher les 20 dernières lignes de /var/log/syslog :
+sudo tail -n 20 /var/log/syslog
+
+2. Suivre les nouvelles lignes ajoutées à /var/log/syslog en temps réel :
+sudo tail -f /var/log/syslog
+
+
+3. Suivre les nouvelles lignes ajoutées à plusieurs fichiers log en temps réel :
+
+Partie 5 : Affichage et Manipulation avec cat
+1. Afficher le contenu de /etc/hosts :
+cat /etc/hosts
+
+
+
+2. Afficher le contenu de plusieurs fichiers de configuration :
+sudo cat /etc/fichier1.conf /etc/fichier2.conf /chemin/vers/fichier3.conf
+
+
+3. Combiner plusieurs fichiers de log en un seul fichier :
+sudo cat /var/log/syslog /var/log/auth.log > combined_logs.txt
+
+
+4. Afficher les numéros de ligne dans un fichier de configuration :
+cat -n fichier.conf
+
+Partie 6 : Combinatoires Avancées
+1. Rechercher les fichiers .log modifiés dans les 7 derniers jours et contenant "error" :
+find /chemin/vers/les/logs -type f -name "*.log" -mtime -7 -exec grep -il "error" {} +
+
+2. Suivre les erreurs en temps réel dans les logs du système et les afficher avec less :
+sudo journalctl -f -p err | less
+
+
+3. Rechercher les fichiers .conf dans /etc et les visualiser un par un avec more :
+sudo find /etc -type f -name "*.conf" -exec more {} +
