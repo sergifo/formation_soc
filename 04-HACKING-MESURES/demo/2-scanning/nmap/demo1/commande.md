@@ -1,0 +1,6 @@
+- sudo nmap -sP 192.168.1.36 # ping, elle va pinger la machine
+- sudo nmpa -sS 192.168.1.36 # il fait une synk (tcp syn) +  je récupère les services.
+- sudo nmap -sV 192.168.1.36 # les ports ouverts + versions des services
+- sudo nmap -sL 192.168.1.* # plusieurs ip
+- sudo nmap -sV -p 80 192.168.1.36 sur le port 80 + versions des services
+- sudo namp -sV -p 3306 192.168.1.36 > scan.txt # Récupérer les résultats des scans
