@@ -1,0 +1,92 @@
+TP1: commandes Linux
+
+Partie 1 : Navigation et Inspection
+
+
+Lister les fichiers et répertoire
+ls 
+
+Listez tous les fichiers et répertoires dans le répertoire /var/log.
+ls var/log
+
+Listez les fichiers avec des détails (permissions, propriétaire, taille, date de modification).
+ls -lai
+Affichez les fichiers cachés dans le répertoire /etc.
+cd etc
+ls -a
+Listez les fichiers dans /home en format lisible par l'humain.
+ls -lh /home
+
+
+Changer de répertoire
+cd
+
+Changez de répertoire pour aller dans /var/log.
+cd /var/log
+Retournez dans votre répertoire personnel.
+cd ~
+Allez dans le répertoire parent de votre répertoire actuel.
+cd .
+
+Retournez dans le répertoire précédent.
+cd ..
+
+Partie 2 : Création et Gestion de Répertoires
+
+Créer des répertoires
+mkdir nom du repertoire
+
+Créez un répertoire cybersec dans votre répertoire personnel.
+mkdir cybersec
+Créez plusieurs répertoires en une seule commande : logs, reports, et scripts à l'intérieur de cybersec.
+mkdir logs, reports, scripts
+Créez une structure de répertoires imbriqués 2024/january/week1 dans reports.
+mkdir -p reports/2024/january/week1
+
+Partie 3 : Création et Gestion de Fichiers
+
+Créer des fichiers
+touch nom de fichier
+
+Créez un fichier vide readme.txt dans cybersec.
+cd cybersec
+touch readme.txt
+Créez plusieurs fichiers vides log1.txt, log2.txt, et log3.txt dans logs.
+mkdir -p logs
+touch logs/log1.txt logs/log2.txt logs/log3.txt
+
+Partie 4 : Manipulation de Fichiers et Répertoires
+
+Copier des fichiers
+
+Copiez readme.txt dans le répertoire scripts.
+mkdir -p scripts
+cp readme.txt scripts/
+
+Copiez tous les fichiers .txt de logs vers reports/2024/january/week1.
+mkdir -p reports/2024/january/week1
+cp logs/*.txt reports/2024/january/week1/
+
+Déplacer et renommer des fichiers
+
+Déplacez log1.txt de logs vers scripts et renommez-le en script_log1.txt.
+mv logs/log1.txt scripts/script_log1.txt
+mv logs/log1.txt scripts/script_log1.txt
+
+Renommez readme.txt en README.md.
+mv cybersec/readme.txt cybersec/README.md
+
+
+Partie 5 : Suppression de Fichiers et Répertoires
+
+Supprimer des fichiers et répertoires
+rm
+
+Supprimez le fichier log2.txt dans logs.
+rm log2.txt
+Supprimez le répertoire week1 et tout son contenu.
+rm -rf week1
+
+
+Supprimez tous les fichiers .txt dans logs.
+rm *.txt
