@@ -1,0 +1,10 @@
+je suis le fichier.tx
+et vous
+comment ca va 
+cat -b fichier.txt
+je suis là
+cat fichier >> 4.txt
+cat fi*
+clear
+end
+

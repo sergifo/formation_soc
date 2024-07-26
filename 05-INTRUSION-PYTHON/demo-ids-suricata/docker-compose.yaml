@@ -1,0 +1,28 @@
+services:
+  suricata:
+    image: jasonish/suricata:latest
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - SYS_NICE
+    volumes:
+      - ./suricata/suricata.yaml:/etc/suricata/suricata.yaml
+      - ./suricata/rules:/etc/suricata/rules
+      - ./suricata/log:/var/log/suricata
+    command: -c /etc/suricata/suricata.yaml -i docker0
+    depends_on:
+      - webserver
+
+  webserver:
+    image: httpd:latest
+    ports:
+      - "85:80"
+    networks:
+      - webnet
+
+networks:
+  webnet:
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 172.21.0.0/16

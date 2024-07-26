@@ -1,0 +1,32 @@
+{
+    "lastseen": "2024-07-05T15:03:45",
+    "bulletinFamily": "unix",
+    "cvelist": [
+        "CVE-2022-24963",
+        "CVE-2022-28331",
+        "CVE-2022-36760",
+        "CVE-2022-37436",
+        "CVE-2022-48279",
+        "CVE-2023-24021",
+        "CVE-2023-27522",
+        "CVE-2023-28319",
+        "CVE-2023-28321",
+        "CVE-2023-28322",
+        "CVE-2023-28484",
+        "CVE-2023-29469"
+    ],
+    "description": "Red Hat JBoss Core Services is a set of supplementary software for Red Hat JBoss middleware products. This software, such as Apache HTTP Server, is common to multiple JBoss middleware products and packaged under Red Hat JBoss Core Services, to allow for faster distribution of updates and for a more consistent update experience.\n\nThis release of Red Hat JBoss Core Services Apache HTTP Server 2.4.57 serves as a replacement for Red Hat JBoss Core Services Apache HTTP Server 2.4.51 Service Pack 2, and includes bug fixes and enhancements, which are documented in the Release Notes document linked to in the References.\n\nSecurity Fix(es):\n\n* apr-util: integer overflow/wraparound in apr_encode (CVE-2022-24963)\n\n* apr-util: Windows out-of-bounds write in apr_socket_sendv function (CVE-2022-28331)\n\n* httpd: mod_proxy_ajp: Possible request smuggling (CVE-2022-36760)\n\n* httpd: mod_proxy: HTTP response splitting (CVE-2022-37436)\n\n* mod_security: incorrect parsing of HTTP multipart requests leads to web application firewall bypass (CVE-2022-48279)\n\n* modsecurity: lacking the complete content in FILES_TMP_CONTENT leads to web application firewall bypass (CVE-2023-24021)\n\n* httpd: mod_proxy_uwsgi HTTP response splitting (CVE-2023-27522)\n\n* curl: use after free in SSH sha256 fingerprint check (CVE-2023-28319)\n\n* curl: IDN wildcard match may lead to Improper Cerificate Validation (CVE-2023-28321)\n\n* libxml2: NULL dereference in xmlSchemaFixupComplexType (CVE-2023-28484)\n\n* libxml2: Hashing of empty dict strings isn't deterministic (CVE-2023-29469)\n\n* curl: more POST-after-PUT confusion (CVE-2023-28322)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+    "modified": "2023-08-15T17:35:41",
+    "id": "RHSA-2023:4628",
+    "href": "https://access.redhat.com/errata/RHSA-2023:4628",
+    "published": "2023-08-15T17:35:26",
+    "type": "redhat",
+    "title": "(RHSA-2023:4628) Moderate: Red Hat JBoss Core Services Apache HTTP Server 2.4.57 security update",
+    "cvss": {
+        "severity": "CRITICAL",
+        "score": 9.8,
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "version": "3.1"
+    },
+    "vhref": "https://vulners.com/redhat/RHSA-2023:4628"
+}

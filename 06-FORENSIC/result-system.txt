@@ -1,0 +1,193 @@
+appcertdlls v.20200427
+----------------------------------------
+appcompatcache v.20220921
+(System) Parse files from System hive AppCompatCache
+
+----------------------------------------
+backuprestore v.20200517
+(System) Gets the contents of the FilesNotToSnapshot, KeysNotToRestore, and FilesNotToBackup keys
+
+----------------------------------------
+bam v.20200427
+(System) Parse files from System hive BAM Services
+
+----------------------------------------
+bthenum v.20200515
+(System) Get BTHENUM subkey info
+
+----------------------------------------
+bthport v.20200517
+(System) Gets Bluetooth-connected devices from System hive
+
+----------------------------------------
+codepage v.20200519
+(system) Checks codepage value
+
+----------------------------------------
+compname v.20090727
+(System) Gets ComputerName and Hostname values from System hive
+
+----------------------------------------
+----------------------------------------
+cred v.20200427
+(system) Checks for UseLogonCredential value
+
+----------------------------------------
+dafupnp v.20200525
+(System) Parses data from networked media streaming devices
+
+----------------------------------------
+devclass v.20200525
+(System) Get USB device info from the DeviceClasses keys in the System hive
+
+----------------------------------------
+disablelastaccess v.20200517
+(System) Get NTFSDisableLastAccessUpdate value
+
+----------------------------------------
+disableremotescm v.20200513
+(System) Gets DisableRemoteScmEndpoints value from System hive
+
+----------------------------------------
+environment v.20200512
+(System, NTUSER.DAT) Get environment vars from NTUSER.DAT & System hives
+
+----------------------------------------
+imagedev v.20140104
+(System)  -- 
+
+----------------------------------------
+ips v.20200518
+(System) Get IP Addresses and domains (DHCP,static)
+
+----------------------------------------
+lsa v.20200517
+(System) Lists specific contents of LSA key
+
+----------------------------------------
+macaddr v.20200515
+(System,Software)  -- 
+
+c:WindowsSystem32configSYSTEM may not be a valid hive.
+----------------------------------------
+mountdev v.20200517
+(System) Return contents of System hive MountedDevices key
+
+
+----------------------------------------
+
+mountdev2 v.20200517
+(System) Return contents of System hive MountedDevices key
+
+----------------------------------------
+netlogon v.20200515
+(System) Parse values for machine account password changes
+
+----------------------------------------
+networksetup2 v.20191004
+(System) Get NetworkSetup2 subkey info
+
+----------------------------------------
+nic2 v.20200525
+(System) Gets NIC info from System hive
+
+----------------------------------------
+ntds v.20200427
+(System) Parse Services NTDS key for specific persistence values
+
+----------------------------------------
+pagefile v.20140505
+(System) Get info on pagefile(s)
+
+----------------------------------------
+pending v.20130711
+(System) Gets contents of PendingFileRenameOperations value
+
+----------------------------------------
+PortProxy v.20210622
+(System) Get port proxy configuration from PortProxy key
+
+----------------------------------------
+prefetch v.20200515
+(System) Gets the the Prefetch Parameters
+
+----------------------------------------
+----------------------------------------
+printmon v.20200427
+(System) Lists installed Print Monitors
+
+----------------------------------------
+processor_architecture v.20140505
+(System) Get from the processor architecture from the System's environment key
+
+----------------------------------------
+profiler v.20200525
+(NTUSER.DAT, System) Environment profiler information
+
+----------------------------------------
+rdpport v.20200526
+(System) Queries System hive for RDP Port
+
+----------------------------------------
+remoteaccess v.20200517
+(System) Get RemoteAccess AccountLockout settings
+
+----------------------------------------
+routes v.20200526
+(System) Get persistent routes from the Registry
+
+----------------------------------------
+Launching securityproviders v.20200526
+(System) Gets SecurityProvider value from System hive
+
+----------------------------------------
+services v.20191024
+(System) Lists services/drivers in Services key by LastWrite times
+
+----------------------------------------
+shares v.20200525
+(System) Get list of shares from System hive file
+
+----------------------------------------
+shimcache v.20220921
+(System) Parse file refs from System hive AppCompatCache data
+
+----------------------------------------
+shutdown v.20200518
+(System) Gets ShutdownTime value from System hive
+
+----------------------------------------
+source_os v.20200511
+(System) Parse Source OS subkey values
+
+----------------------------------------
+svc v.20200525
+(System) Lists Services key contents by LastWrite time (CSV)
+
+----------------------------------------
+svcdll v.20200525
+(System) Lists Services keys with ServiceDll values
+
+----------------------------------------
+termcert v.20200526
+(System) Gets Terminal Server certificate
+
+----------------------------------------
+----------------------------------------
+timezone v.20200518
+(System) Get TimeZoneInformation key contents
+
+----------------------------------------
+usb v.20200515
+(System) Get USB key info
+
+----------------------------------------
+----------------------------------------
+usbstor v.20200515
+(System) Get USBStor key info
+
+----------------------------------------
+wpdbusenum v.20200515
+(System) Get WpdBusEnum subkey info
+
+----------------------------------------
