@@ -1,0 +1,11 @@
+# PAS Correct
+#FROM ubuntu:latest 
+# Correct
+FROM ubuntu:20.04
+
+RUN apt update && apt install apache2 -y
+RUN addgroup --system mygroup && adduser --system --ingroup mygroup myuser
+
+USER myuser
+
+CMD ["bash"]    
